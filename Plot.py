@@ -10,10 +10,11 @@ def plot(sampx, sampy, polyx, polyy, predicty, reg_name = ""):
     plt.legend(loc = 'best')
     fig = plt.gcf()
     fig.set_size_inches(16, 10)
-    plt.savefig("part1" + reg_name, dpi = 100)
-    plt.show()
+    plt.savefig("./figures-e/part1_t2" + reg_name, dpi = 100)
+    plt.show() 
+    plt.close()  
 
-def plot_BR(sampx, sampy, polyx, polyy, pred_miu, pred_sigma):
+def plot_BR(sampx, sampy, polyx, polyy, pred_miu, pred_sigma, reg_name = "BR.png"):
     plt.scatter(sampx, sampy, c='b', label = "sample")
     plt.plot(polyx, pred_miu, c='b', label = "estimatedBR")
     plt.plot(polyx, polyy, c='r', label = "true function")
@@ -23,5 +24,6 @@ def plot_BR(sampx, sampy, polyx, polyy, pred_miu, pred_sigma):
     plt.legend(loc = 'best')
     fig = plt.gcf()
     fig.set_size_inches(16, 10)
-    plt.savefig("part1BR.png", dpi = 100)
+    plt.savefig("./figures-e/part1_t2" + reg_name, dpi = 100)
     plt.show()
+    plt.close()

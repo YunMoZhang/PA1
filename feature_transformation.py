@@ -1,6 +1,6 @@
 import numpy as np
 
-def transform_part1(x, degree = 5):
+def transform_part1(x, degree = 10):
     n = len(x)
     phi = np.zeros((degree + 1, n))   
     for i in range(n):
