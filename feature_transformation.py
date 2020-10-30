@@ -20,7 +20,7 @@ def transform_part2(x, degree = 1, inter = False):
     if inter is True:
         theta_n += (feats_n^2 - feats_n) / 2
     print(theta_n)
-    phi = np.zeros((theta_n, n))
+    phi = np.zeros((int(theta_n), n))
     for i in range(n):
         temp = []
         for d in range(1, degree + 1):
