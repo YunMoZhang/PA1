@@ -214,7 +214,7 @@ mae_ls = MAE(pred_ls, testy)
 
 print("MSE:" + str(mse_ls))
 print("MAE:" + str(mae_ls))
-print("theta_esti:" + str(theta_ls))
+#print("theta_esti:" + str(theta_ls))
 
 
 plot_part2(testy, pred_ls, "order2-cro-LS")
@@ -231,7 +231,7 @@ mae_rls = MAE(pred_rls, testy)
 
 print("MSE:" + str(mse_rls))
 print("MAE:" + str(mae_rls))
-print("theta_esti:" + str(theta_rls))
+#print("theta_esti:" + str(theta_rls))
 
 
 plot_part2(testy, pred_rls, "order2-cro-RLS")
@@ -248,7 +248,7 @@ mae_lasso = MAE(pred_lasso, testy)
 
 print("MSE:" + str(mse_lasso))
 print("MAE:" + str(mae_lasso))
-print("theta_esti:" + str(theta_lasso))
+#print("theta_esti:" + str(theta_lasso))
 
 plot_part2(testy, pred_lasso, "order2-cro-LASSO")
 
@@ -263,7 +263,7 @@ mae_rr = MAE(pred_rr, testy)
 
 print("MSE:" + str(mse_rr))
 print("MAE:" + str(mae_rr))
-print("theta_esti:" + str(theta_rr))
+#print("theta_esti:" + str(theta_rr))
 
 plot_part2(testy, pred_rr, "order2-cro-RR")
 
@@ -281,6 +281,6 @@ mae_br = MAE(pred_miu, testy)
 
 print("MSE:" + str(mse_br))
 print("MAE:" + str(mae_br))
-print("theta_esti:" + str(theta_miu))
+#print("theta_esti:" + str(theta_miu))
 
 plot_part2(testy, pred_miu, "order2-cro-BR")

@@ -295,6 +295,8 @@ print("theta_true:" + str(thtrue))
 
 plot_BR(sampx, added_sampy, polyx, polyy, pred_miu, pred_sigma, "addoutlier_BR")
 '''
+
+
 ################# (e) #################
 
 phi = transform_part1(sampx) 
